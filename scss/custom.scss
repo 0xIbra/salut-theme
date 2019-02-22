@@ -1,1 +1,38 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
+@font-face {
+    font-family: 'Myriad Hebrew';
+    src: url('../fonts/myriad-hebrew-4.otf')
+}
+
+$purple: #9a76e9;
+$blue: #538aed;
+$brown: #463853;
+$weakbrown: #998da0;
+
+body {
+    font-family: 'Myriad Hebrew', sans-serif !important;
+    color: $brown !important;
+}
+
+.container-fluid {
+    width: 93% !important;
+    max-width: 1320px;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+@import '_navbar';
+
+@import '_buttons';
+
+@import '_hero';
+
+@import '_nav';
+
+@import '_card';

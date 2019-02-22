@@ -1,0 +1,25 @@
+.card.modern-card {
+    width: 18rem;
+    background: transparent !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+
+    img.card-img-top {
+        width: 30% !important;
+        margin: auto;
+    }
+
+    .card-body {
+        text-align: center;
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: $weakbrown;
+            font-size: 14px;
+        }
+    }
+}

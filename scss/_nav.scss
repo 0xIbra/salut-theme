@@ -1,0 +1,22 @@
+.nav.modernize {
+
+    li.nav-item {
+
+
+        a.nav-link {
+            color: $brown !important;
+            font-weight: bold !important;
+            font-size: 16pt !important;
+            padding: 5px !important;
+            margin: 5px 15px;
+
+            &.active, &:hover {
+                border-bottom: 2px solid $purple;
+                background: transparent !important;
+                color: $brown !important;
+                border-radius: 0 !important;
+                padding: 5px !important;
+            }
+        }
+    }
+}

@@ -3,10 +3,130 @@
 	<head>
 		<meta name="charset" content="utf8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-		<title>Salut</title>
+		<title>Salut - Organize and manage events with elegance</title>
 		<link rel="stylesheet" href="css/custom.css">
+		<link rel="shortcut icon" href="assets/favicon.png">
 	</head>
 	<body>
-		
+		<div class="page-wrapper">
+			
+			<nav class="navbar modernize navbar-expand-lg navbar-light with-border">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img src="assets/salut-logo.png" alt="Logo">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+				  
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					  <ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+						  <a class="nav-link btn modernize secondary" href="#">Se connecter</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link btn modernize primary">S'inscrire</a>
+						</li>
+					  </ul>
+					</div>
+				</div>
+			  </nav>
+
+			  <section class="hero-section">
+				  <div class="container-fluid">
+					  <div class="row">
+						  <div class="col-sm-12 col-md-7">
+							  <h3 class="title">Planifier, organiser et gérer</h3>
+							  <p class="sub-heading">
+									Avec Salut, vous pouvez planifier, organiser et gérer tout type d'événement avec élégance.								
+							  </p>
+						  </div>
+						  <div class="col-sm-12 col-md-5">
+							  <img src="assets/hero.png" alt="">
+						  </div>
+					  </div>
+				  </div>
+			  </section>
+
+			  <section class="hero-section bg-grey no-pad-top">
+				  <div class="container-fluid">
+					  <div class="header flex justify-center">
+							<ul class="nav nav-pills mb-3 modernize" id="type-tab" role="tablist">
+								<li class="nav-item">
+									<a href="#organizer-tab" class="nav-link active" id="organizer" data-toggle="pill" role="tab">Organisateur</a>
+								</li>
+								<li class="nav-item">
+									<a href="#participator-tab" class="nav-link " id="participator" data-toggle="pill" role="tab">Participant</a>
+								</li>
+							</ul>
+						</div>
+
+						<br>
+
+						<div class="tab-content" id="nav-tabContent">
+							<div class="tab-pane show active" id="organizer-tab" role="tabpanel">
+								<div class="row">
+									<div class="col-sm-12 col-md-4 col-lg-3">
+										<div class="card modern-card">
+											<img src="assets/planning.svg" alt="Planning svg" class="card-img-top">
+											<div class="card-body">
+												<h5 class="card-title">Créer et personnaliser</h5>
+												<p class="card-text">
+													Créer et personnaliser vos événements comme vous le souhaitez. <br>
+													Rendez vos événements privés si une invitation est nécessaire pour y participer.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-4 col-lg-3">
+										<div class="card modern-card">
+											<img src="assets/people.svg" alt="People svg" class="card-img-top">
+											<div class="card-body">
+												<h5 class="card-title">Créer plusieurs programmes</h5>
+												<p class="card-text">
+													Vous pouvez creer plusieurs programmes pour differents types d'utilisateurs.
+													Un programme pour les developpeurs, un autre pour les employeurs etc...
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-4 col-lg-3">
+										<div class="card modern-card">
+											<img src="assets/pages.svg" alt="Pages svg" class="card-img-top">
+											<div class="card-body">
+												<h5 class="card-title">Variations planning</h5>
+												<p class="card-text">
+													Gerer les variations avec les groupes. <br>
+													Creer un groupe d'activites pour que les participants peuvent en choisir une.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-4 col-lg-3">
+										<div class="card modern-card">
+											<img src="assets/placeholder.svg" alt="Placeholder svg" class="card-img-top">
+											<div class="card-body">
+												<h5 class="card-title">Confirmer la présence</h5>
+												<p class="card-text">
+													Confirmez la présence des participants en scannant leurs QR code unique. <br>
+													Vous pouvez aussi ajouter d'autres utilisateurs pour vous aider à gérer votre événement.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="participator-tab" role="tabpanel">
+								Participant
+							</div>
+						</div>
+
+				  </div>
+			  </section>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
 	</body>
 </html>

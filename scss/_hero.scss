@@ -1,0 +1,37 @@
+.hero-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow-x: hidden !important;
+
+    &.bg-grey {
+        background: #f9f9f9 !important;
+    }
+
+    h3.title {
+        font-weight: bolder;
+        font-size: 32pt;
+        color: inherit !important;
+    }
+
+    p.sub-heading {
+        color: $weakbrown !important;
+        font-size: 22pt;
+        font-weight: bold !important;
+    }
+
+    &.no-pad-top {
+        padding-top: 20px !important;
+    }
+
+}
+
+
+@include media-breakpoint-down(md) {
+    h3.title {
+        font-size: 24pt !important;
+    }
+
+    p.sub-heading {
+        font-size: 16pt !important;
+    }
+}

@@ -1,0 +1,23 @@
+.btn.modernize {
+    margin: 5px 10px;
+    padding: 5px 15px !important;
+    color: #eee !important;
+    transition: ease-in .2s;
+    &.primary {
+        background: $purple;
+        
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+
+    &.secondary {
+        background: #f3f3f3 !important;
+        color: #998da0 !important;
+
+        &:hover{
+            background: $purple !important;
+            color: #eee !important;
+        }
+    }
+}
