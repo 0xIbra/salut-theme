@@ -23,3 +23,10 @@
         }
     }
 }
+
+@include media-breakpoint-down(sm) {
+    .card-wrapper {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}

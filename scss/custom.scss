@@ -27,6 +27,12 @@ body {
     justify-content: center !important;
 }
 
+@include media-breakpoint-down(sm) {
+    .hidden-sm-down {
+        display: none !important;
+    }
+}
+
 @import '_navbar';
 
 @import '_buttons';

@@ -25,6 +25,24 @@
 
 }
 
+#mobile-version {
+    color: $brown !important;
+
+    #mobile-content {
+
+        .section-title {
+            font-weight: bold;
+            font-size: 28pt;
+        }
+
+        .section-sub-heading {
+            color: $weakbrown;
+            font-weight: bold;
+            font-size: 18pt;
+        }
+    }
+}
+
 
 @include media-breakpoint-down(md) {
     h3.title {
