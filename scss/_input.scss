@@ -1,0 +1,44 @@
+.custom-control.custom-checkbox.modernize {
+
+    .custom-control-input:checked ~ .custom-control-label::before {
+        background: $purple !important;
+        border-color: $purple !important;
+    }
+
+    .custom-control-label {
+        color: $weakbrown !important;
+    }
+}
+
+
+.form-group {
+    .form-control:focus {
+        border-color: $purple !important;
+        box-shadow: 0 0 0 0.2rem rgba(154, 118, 233, 0.5) !important;
+    }
+
+    .form-control.no-border:focus {
+        box-shadow: none !important;
+    }
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(154, 118, 233, 0.5) !important;
+    border-color: $purple !important;    
+}
+
+.form-control.modernize {
+    &::placeholder {
+        color: $weakbrown !important;
+    }
+}
+
+.form-group.modernize {
+    margin-bottom: 0.5rem !important;
+}
+
+.form-control.no-border {
+    border-radius: 0 !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+}

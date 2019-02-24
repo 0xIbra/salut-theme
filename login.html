@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="charset" content="utf8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title>Salut - Connexion</title>
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="shortcut icon" href="assets/favicon.png">
+	</head>
+	<body class="bg-grey">
+		<div class="page-wrapper">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col md-8 col-lg-4">
+                    <div class="card modernize login-card container-fluid">
+                        <div class="flex justify-center logo-wrapper">
+                            <img src="assets/salut-logo.png" alt="">
+                        </div>
+                        <span class="info">Connectez-vous avec votre email</span>
+                        <div class="card-body">
+                            <form method="GET" action="/profile.html">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control no-border modernize" placeholder="Adresse email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" class="form-control no-border modernize" placeholder="Mot de passe">
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3 modernize">
+                                    <input type="checkbox" class="custom-control-input" id="keeploggedin" name="example1">
+                                    <label class="custom-control-label" for="keeploggedin">Rester connecté</label>
+                                </div>
+                                <button type="submit" class="btn primary modernize btn-center">Se connecter</button>
+                            </form>
+                        </div>
+                        <div class="login-card-footer">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="#" class="redirect text-center">Mot de passe oublié ?</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="register.html" class="redirect text-center">Créer un compte</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="charset" content="utf8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<title>Salut - Connexion</title>
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="shortcut icon" href="assets/favicon.png">
+	</head>
+	<body class="bg-grey">
+		<div class="page-wrapper">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-8 col-lg-5">
+                    <div class="card modernize login-card container-fluid">
+                        <div class="flex justify-center logo-wrapper">
+                            <img src="assets/salut-logo.png" alt="">
+                        </div>
+                        <span class="info">Inscrivez-vous avec votre email</span>
+                        <div class="card-body">
+                            <form method="GET" action="/profile.html">
+                                <div class="row no-margin no-padding">
+                                    <div class="col-6">
+                                        <div class="form-group ">
+                                            <input type="text" class="form-control modernize no-border" placeholder="Prenom">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group ">
+                                            <input type="text" class="form-control modernize no-border" placeholder="Nom">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <input type="text" name="job" class="form-control modernize no-border" placeholder="Fonction">
+                                </div>
+                                <div class="form-group ">
+                                    <input type="email" name="email" class="form-control modernize no-border" placeholder="Adresse email">
+                                </div>
+                                <div class="form-group ">
+                                    <input type="password" name="password" class="form-control modernize no-border" placeholder="Mot de passe">
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3 modernize">
+                                    <input type="checkbox" class="custom-control-input" id="keeploggedin" name="example1">
+                                    <label class="custom-control-label" for="keeploggedin">
+                                        J'accepte les <a href="#" class="redirect bold">conditions & termes d'utilisation</a>
+                                        de Salut.
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn primary modernize btn-center">S'inscrire</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="sub-card flex justify-center">
+                        <span>Vous avez deja un compte ? <a href="login.html" class="redirect bold">Se connecter</a></span>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('form').on('submit', function () {
+                    window.location.href = '/profile.html'
+                })
+            })
+        </script>
+	</body>
+</html>

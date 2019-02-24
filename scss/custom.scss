@@ -12,11 +12,20 @@ $weakbrown: #998da0;
 body {
     font-family: 'Myriad Hebrew', sans-serif !important;
     color: $brown !important;
+    overflow-x: hidden;
+
+    &.bg-grey {
+        background: #f6f6f6 !important;
+    }
 }
 
 .container-fluid {
     width: 93% !important;
     max-width: 1320px;
+}
+
+.bold {
+    font-weight: bold !important;
 }
 
 .flex {
@@ -42,3 +51,7 @@ body {
 @import '_nav';
 
 @import '_card';
+
+@import '_input';
+
+@import '_dropdown';

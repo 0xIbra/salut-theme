@@ -7595,11 +7595,17 @@ a.text-dark:hover, a.text-dark:focus {
   src: url("../fonts/myriad-hebrew-4.otf"); }
 body {
   font-family: 'Myriad Hebrew', sans-serif !important;
-  color: #463853 !important; }
+  color: #463853 !important;
+  overflow-x: hidden; }
+  body.bg-grey {
+    background: #f6f6f6 !important; }
 
 .container-fluid {
   width: 93% !important;
   max-width: 1320px; }
+
+.bold {
+  font-weight: bold !important; }
 
 .flex {
   display: flex !important; }
@@ -7630,6 +7636,10 @@ nav.modernize.with-border {
     .btn.modernize.secondary:hover {
       background: #9a76e9 !important;
       color: #eee !important; }
+
+a.redirect {
+  color: #9a76e9 !important;
+  background: transparent !important; }
 
 .hero-section {
   padding-top: 100px;
@@ -7677,6 +7687,42 @@ nav.modernize.with-border {
     border-radius: 0 !important;
     padding: 5px !important; }
 
+a.nav-link.modernize.purple {
+  color: #463853;
+  opacity: 0.6; }
+  a.nav-link.modernize.purple span {
+    font-size: 22px;
+    font-weight: bold; }
+  a.nav-link.modernize.purple p {
+    font-size: 14px;
+    color: #998da0;
+    margin-bottom: 0 !important; }
+  a.nav-link.modernize.purple.active {
+    opacity: 1 !important;
+    border-left: 3px solid #9a76e9;
+    background: transparent !important;
+    border-radius: 0 !important; }
+
+img.mobile-friendly {
+  max-height: 600px; }
+
+a.nav-link.profile-link {
+  display: flex;
+  align-items: center;
+  color: #998da0 !important; }
+  a.nav-link.profile-link div.image {
+    margin-right: 15px; }
+    a.nav-link.profile-link div.image img.circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.13); }
+  a.nav-link.profile-link:focus {
+    box-shadow: none !important; }
+
+@media (max-width: 991.98px) {
+  img.mobile-friendly {
+    max-height: 400px !important; } }
 .card.modern-card {
   width: 18rem;
   background: transparent !important;
@@ -7694,9 +7740,58 @@ nav.modernize.with-border {
       color: #998da0;
       font-size: 14px; }
 
+.login-card.card {
+  margin-top: 50px;
+  color: #463853; }
+  .login-card.card .logo-wrapper {
+    margin: 30px 0; }
+  .login-card.card .info {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center; }
+  .login-card.card .card-body .btn-center {
+    display: block;
+    margin: auto; }
+  .login-card.card .login-card-footer {
+    padding: 20px 10px; }
+
+.sub-card {
+  margin-top: 10px;
+  color: #998da0 !important;
+  font-weight: 100 !important; }
+
 @media (max-width: 767.98px) {
   .card-wrapper {
     display: flex !important;
     justify-content: center !important; } }
+.custom-control.custom-checkbox.modernize .custom-control-input:checked ~ .custom-control-label::before {
+  background: #9a76e9 !important;
+  border-color: #9a76e9 !important; }
+.custom-control.custom-checkbox.modernize .custom-control-label {
+  color: #998da0 !important; }
+
+.form-group .form-control:focus {
+  border-color: #9a76e9 !important;
+  box-shadow: 0 0 0 0.2rem rgba(154, 118, 233, 0.5) !important; }
+.form-group .form-control.no-border:focus {
+  box-shadow: none !important; }
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba(154, 118, 233, 0.5) !important;
+  border-color: #9a76e9 !important; }
+
+.form-control.modernize::placeholder {
+  color: #998da0 !important; }
+
+.form-group.modernize {
+  margin-bottom: 0.5rem !important; }
+
+.form-control.no-border {
+  border-radius: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important; }
+
+.dropdown-menu.modernize {
+  color: #463853; }
 
 /*# sourceMappingURL=custom.css.map */
