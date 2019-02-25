@@ -55,11 +55,11 @@ a.nav-link.profile-link {
     color: $weakbrown !important;
 
     div.image {
-        margin-right: 15px;
+        margin-left: 5px;
 
         img.circle {
-            width: 40px;
-            height: 40px;
+            width: 33px;
+            height: 33px;
             border-radius: 50%;
             box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.13);
         }
@@ -67,6 +67,16 @@ a.nav-link.profile-link {
 
     &:focus {
         box-shadow: none !important;
+    }
+}
+
+
+.nav-icons {
+    color: $weakbrown;
+    margin-right: 10px;
+
+    a {
+        color: inherit;
     }
 }
 

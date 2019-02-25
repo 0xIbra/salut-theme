@@ -1,3 +1,92 @@
 .dropdown-menu.modernize {
-    color: $brown;
+    color: $weakbrown;
+
+    .dropdown-item {
+        opacity: 0.9;
+
+        span {
+            color: $brown !important;
+        }
+
+        .icon {
+            color: $weakbrown !important;
+            margin-right: 5px;
+        }
+
+        &:focus {
+            background: $purple !important;
+            color: #eee !important;
+
+            span, .icon {
+                color: inherit !important;
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+
+    &.mobile {
+        left: unset !important;
+        right: -70px !important;
+        top: 50px !important;
+    }
+
+    .dropdown-title {
+        text-align: center;
+        color: $brown;
+        display: block;
+        font-weight: bold;
+    }
+}
+
+.dropdown-item.notification {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+        color: #eee !important;
+        background: $purple !important;
+
+        .left {
+            color: inherit !important;
+        }
+
+        .right {
+            .date {
+                color: #eeeeee !important;
+            }
+
+            .title {
+                color: inherit !important;
+            }
+        }
+    }
+    
+    .left {
+        color: $weakbrown;
+        margin-right: 10px;
+
+        .icon {
+            font-size: 18px;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+
+        .date {
+            color: $weakbrown;
+            font-size: 12px;
+        }
+
+        .title {
+            color: $brown;
+
+        }
+    }
 }

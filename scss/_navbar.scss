@@ -1,9 +1,28 @@
 nav.modernize.with-border {
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    background: #fff;
 
     a.navbar-brand {
         img {
             height: 50px !important;
+        }
+    }
+}
+
+.navbar-nav.modernize {
+    display: flex !important;
+    align-items: center !important;
+}
+
+@include media-breakpoint-down(sm) {
+    nav.modernize.with-border {
+
+
+        a.navbar-brand {
+
+            img {
+                height: 40px !important;
+            }
         }
     }
 }

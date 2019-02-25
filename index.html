@@ -6,20 +6,21 @@
 		<title>Salut - Organiser et gérer votre événement avec elegance</title>
 		<link rel="stylesheet" href="css/custom.css">
 		<link rel="shortcut icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 	</head>
 	<body>
 		<div class="page-wrapper">
 			
-			<nav class="navbar modernize navbar-expand-lg navbar-light with-border">
+			<nav class="navbar modernize navbar-expand-lg navbar-light with-border fixed-top">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand" href="index.html">
 						<img src="assets/salut-logo.png" alt="Logo">
 					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					  <span class="navbar-toggler-icon"></span>
 					</button>
 				  
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar navbar-desktop" id="navbarSupportedContent">
 					  <ul class="navbar-nav ml-auto">
 						<li class="nav-item">
 						  <a class="nav-link btn modernize secondary" href="login.html">Se connecter</a>
@@ -29,6 +30,32 @@
 						</li>
 					  </ul>
 					</div>
+
+					<div class="sidebar-wrapper" id="sidebar">
+						<div class="overlay sidebar-overlay"></div>
+						<div class="sidebar md-and-down">
+							<ul class="sidebar-list">
+
+								<li class="account">
+									<a href="index.html">
+										<div class="image logo">
+											<img src="assets/salut-logo.png" alt="Salut logo" class="logo">
+										</div>
+									</a>
+								</li>
+								
+								<li class="sidebar-item"><a href="login.html" class="sidebar-link">
+									<i class="icon fas fa-user-circle"></i>
+									<span>Se connecter</span>
+								</a></li>
+								<li class="sidebar-item"><a href="register.html" class="sidebar-link">
+									<i class="icon fas fa-sliders-h"></i>
+									<span>S'inscrire</span>
+								</a></li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
 			  </nav>
 
@@ -41,8 +68,8 @@
 									Avec Salut, vous pouvez planifier, organiser et gérer tout type d'événement avec élégance.								
 							  </p>
 						  </div>
-						  <div class="col-sm-12 col-md-5">
-							  <img src="assets/hero.png" alt="">
+						  <div class="col-sm-12 col-md-5 illustration">
+							  <img src="assets/hero.png" alt="Isometric illustration">
 						  </div>
 					  </div>
 				  </div>
@@ -213,5 +240,6 @@
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

@@ -1,0 +1,117 @@
+.sidebar-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 50;
+
+    &.show {
+        visibility: visible !important;
+
+        .sidebar {
+            transform: translateX(0%) !important;
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.45);
+        z-index: 50;
+    }
+
+    .sidebar {
+        position: fixed;
+        right: 0;
+        top: 0;
+        color: $brown;
+        width: 70%;
+        max-width: 230px;
+        min-width: 150px;
+        height: 100%;
+        background: $grey-bg;
+        z-index: 60;
+        transition: ease-in .1s;
+        transform: translateX(100%);
+    
+        ul.sidebar-list {
+            text-decoration: none;
+            list-style: none;
+            color: inherit;
+            padding: 0 !important;
+
+            li.account {
+                padding: 10px 20px;
+                margin: auto;
+                border-bottom: 1px solid rgba(154, 118, 233, 0.2);
+
+                a {
+                    color: $brown;
+                    text-decoration: none;
+
+                    .image.logo {
+
+                        img {
+                            width: 150px;
+                        }
+                    }
+
+                    .image.circle {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin: auto;
+    
+                        img {
+                            width: 50px;
+                        }
+                    }
+    
+                    .info {
+                        text-align: center;
+                        padding: 0;
+                        margin-top: 10px;
+                        line-height: 1.2;
+    
+                        .name {
+                            font-weight: bold;
+                            font-size: 16px;
+                        }
+                        
+                        .role {
+                            color: $weakbrown !important;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+    
+            li.sidebar-item {
+                padding: 10px 20px;
+                cursor: pointer;
+
+                &:hover {
+                    background: $purple;
+                    color: #eee !important;
+
+                }
+
+                a.sidebar-link {
+                    color: inherit;
+                    text-decoration: none;
+
+                    .icon {
+                        margin-right: 10px;
+                    }
+
+
+                }
+            }
+        }
+    }
+}

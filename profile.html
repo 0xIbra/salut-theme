@@ -3,46 +3,159 @@
 	<head>
 		<meta name="charset" content="utf8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-		<title>Salut - Connexion</title>
+		<title>Salut - Ibragim Abubakarov</title>
 		<link rel="stylesheet" href="css/custom.css">
-		<link rel="shortcut icon" href="assets/favicon.png">
+        <link rel="shortcut icon" href="assets/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 	</head>
 	<body>
 		<div class="page-wrapper">
             
             <nav class="navbar modernize navbar-expand-lg navbar-light with-border">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img src="assets/salut-logo.png" alt="Logo">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <div class="nav-icons md-and-down ml-auto">
+                            <div class="dropdown icon-item">
+                                <a href="#" class="nav-link modernize" id="notifications-btn" role="button" data-toggle="dropdown">
+                                    <i class="fas fa-bell"></i>
+                                </a>
+                                <div class="dropdown-menu mobile" aria-labelledby="notifications-btn">
+                                    <span class="dropdown-title">Notifications</span>
+                                    <div class="dropdown-item notification">
+                                        <div class="left">
+                                            <i class="icon fas fa-envelope"></i>
+                                        </div>
+                                        <div class="right">
+                                            <span class="date">24 février 2019</span>
+                                            <span class="title">New message from Ibragim !</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-item notification">
+                                        <div class="left">
+                                            <i class="icon fas fa-envelope"></i>
+                                        </div>
+                                        <div class="right">
+                                            <span class="date">24 février 2019</span>
+                                            <span class="title">New message from Ibragim !</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
+                    <div class="navbar navbar-desktop" id="navbarSupportedContent">
+                        <ul class="navbar-nav modernize ml-auto">
+
+                                <div class="dropdown">
+                                    <a href="#" class="nav-link modernize" id="notifications-btn" role="button" data-toggle="dropdown">
+                                        <i class="fas fa-bell"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="notifications-btn">
+                                        <span class="dropdown-title">Notifications</span>
+                                        <div class="dropdown-item notification">
+                                            <div class="left">
+                                                <i class="icon fas fa-envelope"></i>
+                                            </div>
+                                            <div class="right">
+                                                <span class="date">24 février 2019</span>
+                                                <span class="title">New message from Ibragim !</span>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item notification">
+                                            <div class="left">
+                                                <i class="icon fas fa-envelope"></i>
+                                            </div>
+                                            <div class="right">
+                                                <span class="date">24 février 2019</span>
+                                                <span class="title">New message from Ibragim !</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <span class="v-divider hidden-sm-down"></span>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Tableau de bord</a>
+                            </li>
+                            
                             <div class="dropdown">
-                                <a class="btn secondary dropdown-toggle nav-link profile-link" href="#" role="button" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="btn secondary nav-link profile-link" href="#" role="button" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="name">Ibragim Abubakarov</span>
                                     <div class="image">
                                         <img src="assets/profile.jpeg" class="circle" alt="">
                                     </div>
-                                    <span class="name">Ibragim Abubakarov</span>
                                 </a>
                                 
                                 <div class="dropdown-menu modernize" aria-labelledby="profileDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <a class="dropdown-item" href="profile.html">
+                                        <i class="icon far fa-user-circle"></i>
+                                        <span>Mon compte</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fas fa-sliders-h icon"></i>
+                                        <span>Parametres</span>
+                                    </a>
+                                    <a class="dropdown-item" href="index.html">
+                                        <i class="icon fas fa-sign-out-alt"></i>
+                                        <span>Déconnecter</span>
+                                    </a>
                                 </div>
                             </div>
+                        
                         </ul>
                     </div>
+
+                    <div class="sidebar-wrapper" id="sidebar">
+                        <div class="overlay sidebar-overlay"></div>
+                        <div class="sidebar md-and-down">
+                            <ul class="sidebar-list">
+                                <li class="account">
+                                    <a href="profile.html">
+                                        <div class="image circle">
+                                            <img src="assets/profile.jpeg" alt="Ibragim Abubakarov">
+                                        </div>
+                                        <div class="info">
+                                            <span class="name">Ibragim Abubakarov</span>
+                                            <span class="role">Administrateur</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-item"><a href="#" class="sidebar-link">
+                                    <i class="icon fas fa-tachometer-alt"></i>
+                                    <span>Tableau de bord</span>
+                                </a></li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link">
+                                    <i class="icon fas fa-user-circle"></i>
+                                    <span>Mon profil</span>
+                                </a></li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link">
+                                    <i class="icon fas fa-sliders-h"></i>
+                                    <span>Parametres</span>
+                                </a></li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link">
+                                    <i class="icon fas fa-sign-out-alt"></i>
+                                    <span>Déconnexion</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </nav>
 
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 	</body>
 </html>

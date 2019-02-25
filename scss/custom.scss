@@ -8,6 +8,7 @@ $purple: #9a76e9;
 $blue: #538aed;
 $brown: #463853;
 $weakbrown: #998da0;
+$grey-bg: #f6f6f6;
 
 body {
     font-family: 'Myriad Hebrew', sans-serif !important;
@@ -15,7 +16,7 @@ body {
     overflow-x: hidden;
 
     &.bg-grey {
-        background: #f6f6f6 !important;
+        background: $grey-bg !important;
     }
 }
 
@@ -36,8 +37,39 @@ body {
     justify-content: center !important;
 }
 
+.v-divider {
+    width: 1px;
+    height: 30px;
+    border-right: 1px solid rgba(0,0,0,0.12);
+    margin: 0 5px;
+}
+
+.mobile-only {
+    display: none !important;
+    @include media-breakpoint-down(sm) {
+        display: block !important;
+    }
+}
+
+.md-and-down {
+    display: none;
+    @include media-breakpoint-down(md) {
+        display: block !important;
+    }
+}
+
 @include media-breakpoint-down(sm) {
     .hidden-sm-down {
+        display: none !important;
+    }
+
+    .navbar-desktop {
+        display: none !important;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .navbar-desktop {
         display: none !important;
     }
 }
@@ -55,3 +87,5 @@ body {
 @import '_input';
 
 @import '_dropdown';
+
+@import '_sidebar';

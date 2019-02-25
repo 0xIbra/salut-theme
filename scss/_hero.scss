@@ -1,7 +1,8 @@
 .hero-section {
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 100px;
     overflow-x: hidden !important;
+
 
     &.bg-grey {
         background: #f9f9f9 !important;
@@ -21,6 +22,19 @@
 
     &.no-pad-top {
         padding-top: 20px !important;
+    }
+
+    .illustration {
+        position: relative;
+        z-index: 20;
+
+        @include media-breakpoint-down(md) {
+            img {
+                position: relative;
+                left: -50px;
+                width: 450px;
+            }
+        }
     }
 
 }
