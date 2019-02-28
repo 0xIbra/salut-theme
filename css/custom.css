@@ -7678,7 +7678,11 @@ a.redirect {
   padding-bottom: 100px;
   overflow-x: hidden !important; }
   .hero-section.bg-grey {
-    background: #f9f9f9 !important; }
+    background: #f9f9f9 !important;
+    position: relative !important; }
+  .hero-section.bg-purple {
+    padding-bottom: 10px !important;
+    background: #9a76e9 !important; }
   .hero-section h3.title {
     font-weight: bolder;
     font-size: 32pt;
@@ -7816,6 +7820,68 @@ a.nav-link.profile-link {
   margin-top: 10px;
   color: #998da0 !important;
   font-weight: 100 !important; }
+
+.card.floating-card {
+  position: absolute !important;
+  top: 140px;
+  width: 88%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 1px 1px 20px -2px rgba(0, 0, 0, 0.2);
+  border: none !important;
+  padding: 20px 40px; }
+  @media (max-width: 991.98px) {
+    .card.floating-card {
+      top: 110px !important; } }
+  .card.floating-card .image-wrapper {
+    border-radius: 50% !important;
+    overflow: hidden;
+    width: 120px;
+    height: 120px; }
+    @media (max-width: 767.98px) {
+      .card.floating-card .image-wrapper {
+        margin: 0 auto 20px auto !important; } }
+    .card.floating-card .image-wrapper.shadow {
+      box-shadow: 1px 1px 20px -2px rgba(0, 0, 0, 0.2) !important; }
+    .card.floating-card .image-wrapper .profile-circle {
+      width: 100%; }
+  .card.floating-card .profile-info {
+    color: #463853 !important;
+    line-height: 1.2; }
+    .card.floating-card .profile-info .name {
+      font-size: 24pt;
+      font-weight: bold; }
+    .card.floating-card .profile-info .job {
+      color: #998da0 !important;
+      margin-bottom: 10px;
+      font-size: 16px; }
+      .card.floating-card .profile-info .job .icon {
+        margin-right: 5px; }
+    .card.floating-card .profile-info .bio {
+      color: #998da0 !important;
+      margin-bottom: 20px; }
+    .card.floating-card .profile-info .social-icons {
+      color: #9a76e9; }
+      .card.floating-card .profile-info .social-icons a {
+        color: inherit;
+        padding: 5px; }
+        .card.floating-card .profile-info .social-icons a:hover {
+          opacity: .8 !important; }
+    @media (max-width: 767.98px) {
+      .card.floating-card .profile-info .name, .card.floating-card .profile-info .job {
+        text-align: center; }
+      .card.floating-card .profile-info .job {
+        font-size: 14px !important; }
+      .card.floating-card .profile-info .bio {
+        text-align: center;
+        width: 80% !important;
+        margin: auto auto 20px auto !important;
+        font-size: 13px !important; }
+      .card.floating-card .profile-info .social-icons {
+        width: 70% !important;
+        margin: auto !important;
+        text-align: center !important; } }
 
 @media (max-width: 767.98px) {
   .card-wrapper {

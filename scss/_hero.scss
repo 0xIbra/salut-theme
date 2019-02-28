@@ -6,6 +6,12 @@
 
     &.bg-grey {
         background: #f9f9f9 !important;
+        position: relative !important;
+    }
+
+    &.bg-purple {
+        padding-bottom: 10px !important;
+        background: $purple !important;
     }
 
     h3.title {
