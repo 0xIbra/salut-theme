@@ -4,6 +4,11 @@
     overflow-x: hidden !important;
 
 
+    &.clear-bottom {
+        margin-bottom: 15%;
+    }
+
+
     &.bg-grey {
         background: #f9f9f9 !important;
         position: relative !important;

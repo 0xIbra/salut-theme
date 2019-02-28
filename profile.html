@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="assets/favicon.png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 	</head>
-	<body>
+	<body class="bg-grey">
 		<div class="page-wrapper">
             
             <nav class="navbar modernize navbar-expand-lg navbar-light with-border">
@@ -88,7 +88,7 @@
                             
                             <div class="dropdown">
                                 <a class="btn secondary nav-link profile-link" href="#" role="button" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="name">Ibragim Abubakarov</span>
+                                    <span>Ibragim A.</span>
                                     <div class="image">
                                         <img src="assets/profile.jpeg" class="circle" alt="">
                                     </div>
@@ -105,7 +105,7 @@
                                     </a>
                                     <a class="dropdown-item" href="index.html">
                                         <i class="icon fas fa-sign-out-alt"></i>
-                                        <span>Déconnecter</span>
+                                        <span>Déconnexion</span>
                                     </a>
                                 </div>
                             </div>
@@ -141,7 +141,7 @@
                                     <i class="icon fas fa-sliders-h"></i>
                                     <span>Parametres</span>
                                 </a></li>
-                                <li class="sidebar-item"><a href="#" class="sidebar-link">
+                                <li class="sidebar-item"><a href="index.html" class="sidebar-link">
                                     <i class="icon fas fa-sign-out-alt"></i>
                                     <span>Déconnexion</span>
                                 </a></li>
@@ -152,37 +152,106 @@
                 </div>
             </nav>
 
-            <section class="hero-section bg-purple">
+            <section class="hero-section bg-purple clear-bottom">
                 <div class="container-fluid">
-                    <div class="floating-card card">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-3 col-lg-2">
-                                <div class="image-wrapper shadow">
-                                    <img src="assets/profile.jpeg" alt="Ibragim Abubakarov" class="profile-circle">
+                    <div class="card-column container-fluid">
+                        <div class="floating-card card">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-3 col-lg-2">
+                                    <div class="image-wrapper shadow">
+                                        <img src="assets/profile.jpeg" alt="Ibragim Abubakarov" class="profile-circle">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-12 col-md-8 col-lg-9">
-                                <div class="profile-info">
-                                    <div class="name">Ibragim Abubakarov</div>
-                                    <div class="job">
-                                        <i class="icon fas fa-briefcase"></i>
-                                        <span>Développeur d'applications web</span>
-                                    </div>
-                                    <div class="bio">
-                                        Juste un gars qui est passionné et curieux, un gars qui aime apprendre en créant, <br>
-                                        un gars qui dédie tout son temps a l'apprentissage des nouvelles technologies.
-                                    </div>
-                                    <div class="social-icons">
-                                        <a href="https://www.linkedin.com/in/ibragim64000/"><i class="fab fa-linkedin-in"></i></a>
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="https://www.instagram.com/ibrahim_tchee/"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-dribbble"></i></a>
-                                        <a href="#"><i class="fab fa-behance"></i></a>
+                                <div class="col-sm-12 col-md-8 col-lg-9">
+                                    <div class="profile-info">
+                                        <div class="name">M. Ibragim Abubakarov</div>
+                                        <div class="job">
+                                            <i class="icon fas fa-briefcase"></i>
+                                            <span>Développeur d'applications web</span>
+                                        </div>
+                                        <div class="bio">
+                                            Juste un gars qui est passionné et curieux, un gars qui aime apprendre en créant, <br>
+                                            un gars qui dédie tout son temps a l'apprentissage des nouvelles technologies.
+                                        </div>
+                                        <div class="social-icons">
+                                            <a href="https://www.linkedin.com/in/ibragim64000/"><i class="fab fa-linkedin-in"></i></a>
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="https://www.instagram.com/ibrahim_tchee/"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                            <a href="#"><i class="fab fa-behance"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="card floating-card no-pad">
+                            <ul class="nav nav-tabs modernize bg-grey" role="tablist">
+                                <li class="nav-item">
+                                    <a href="#profile-info" class="nav-link active" data-toggle="tab">
+                                        <i class="fa fa-user"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#profile-events" class="nav-link" data-toggle="tab">
+                                        <span class="hidden-sm-down">Mes événements</span>
+                                        <i class="far fa-calendar-alt mobile-only"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#profile-participations" class="nav-link" data-toggle="tab">
+                                        <span class="hidden-sm-down">Participations</span>
+                                        <i class="fa fa-users mobile-only"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="correct-pad">
+                                <div class="tab-content" id="profile-tabs">
+
+                                    <div class="tab-pane fade show active" id="profile-info" role="tabpanel">
+                                        <div class="row">
+                                            <!--<div class="col-12">-->
+                                                <!--<div class="flex justify-content-right">-->
+                                                    <!--<a href="#" class="redirect bold">-->
+                                                        <!--<i class="icon fa fa-pen"></i>-->
+                                                    <!--</a>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+
+                                            <div class="col-10">
+                                                <div class="info-card">
+                                                    <span class="title">Informations de votre compte</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-2">
+                                                <div class="flex justify-content-right">
+                                                    <a href="#" class="redirect bold">
+                                                        <i class="icon fa fa-pen"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-12 col-md-6 col-lg-3"></div>
+                                            <div class="col-sm-12 col-md-6 col-lg-3"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="profile-events" role="tabpanel">
+                                        <h1>Events</h1>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="profile-participations" role="tabpanel">
+                                        <h1>Participations</h1>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </section>

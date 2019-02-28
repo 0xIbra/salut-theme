@@ -81,6 +81,47 @@ a.nav-link.profile-link {
 }
 
 
+ul.nav.nav-tabs.modernize {
+    border: none !important;
+    color: $brown;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px -3px 15px -4px rgba(0, 0, 0, 0.2);
+
+    &.bg-grey {
+        background: $grey-bg !important;
+    }
+
+    li.nav-item {
+        a.nav-link {
+            margin: 0 !important;
+            padding: 10px 20px !important;
+            font-weight: normal !important;
+            font-size: 18px !important;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 16px !important;
+            }
+
+            &:hover {
+                border: none !important;
+                border-bottom: 2px solid $purple !important;
+                color: $purple !important;
+            }
+
+            &.active {
+                background: #fff !important;
+                border: none !important;
+                border-bottom: 2px solid $purple !important;
+                border-right: 1px solid rgba(0,0,0,0.1) !important;
+                border-left: 1px solid rgba(0,0,0,0.1) !important;
+                color: $purple !important;
+            }
+        }
+    }
+}
+
+
 @include media-breakpoint-down(md) {
     img.mobile-friendly {
         max-height: 400px !important;

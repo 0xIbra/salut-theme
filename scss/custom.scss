@@ -23,6 +23,10 @@ body {
 .container-fluid {
     width: 93% !important;
     max-width: 1320px;
+
+    @include media-breakpoint-down(sm) {
+        width: 100% !important;
+    }
 }
 
 .bold {
@@ -31,6 +35,10 @@ body {
 
 .flex {
     display: flex !important;
+}
+
+.justify-content-right {
+    justify-content: flex-end !important;
 }
 
 .justify-center {
@@ -57,6 +65,8 @@ body {
         display: block !important;
     }
 }
+
+
 
 @include media-breakpoint-down(sm) {
     .hidden-sm-down {

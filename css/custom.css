@@ -7603,12 +7603,18 @@ body {
 .container-fluid {
   width: 93% !important;
   max-width: 1320px; }
+  @media (max-width: 767.98px) {
+    .container-fluid {
+      width: 100% !important; } }
 
 .bold {
   font-weight: bold !important; }
 
 .flex {
   display: flex !important; }
+
+.justify-content-right {
+  justify-content: flex-end !important; }
 
 .justify-center {
   justify-content: center !important; }
@@ -7677,6 +7683,8 @@ a.redirect {
   padding-top: 150px;
   padding-bottom: 100px;
   overflow-x: hidden !important; }
+  .hero-section.clear-bottom {
+    margin-bottom: 15%; }
   .hero-section.bg-grey {
     background: #f9f9f9 !important;
     position: relative !important; }
@@ -7770,6 +7778,34 @@ a.nav-link.profile-link {
   .nav-icons a {
     color: inherit; }
 
+ul.nav.nav-tabs.modernize {
+  border: none !important;
+  color: #463853;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px -3px 15px -4px rgba(0, 0, 0, 0.2); }
+  ul.nav.nav-tabs.modernize.bg-grey {
+    background: #f6f6f6 !important; }
+  ul.nav.nav-tabs.modernize li.nav-item a.nav-link {
+    margin: 0 !important;
+    padding: 10px 20px !important;
+    font-weight: normal !important;
+    font-size: 18px !important; }
+    @media (max-width: 767.98px) {
+      ul.nav.nav-tabs.modernize li.nav-item a.nav-link {
+        font-size: 16px !important; } }
+    ul.nav.nav-tabs.modernize li.nav-item a.nav-link:hover {
+      border: none !important;
+      border-bottom: 2px solid #9a76e9 !important;
+      color: #9a76e9 !important; }
+    ul.nav.nav-tabs.modernize li.nav-item a.nav-link.active {
+      background: #fff !important;
+      border: none !important;
+      border-bottom: 2px solid #9a76e9 !important;
+      border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+      border-left: 1px solid rgba(0, 0, 0, 0.1) !important;
+      color: #9a76e9 !important; }
+
 @media (max-width: 991.98px) {
   img.mobile-friendly {
     max-height: 400px !important; } }
@@ -7821,19 +7857,31 @@ a.nav-link.profile-link {
   color: #998da0 !important;
   font-weight: 100 !important; }
 
-.card.floating-card {
-  position: absolute !important;
+.card-column {
+  position: absolute;
   top: 140px;
-  width: 88%;
+  width: 90%;
+  margin: auto;
+  left: 0;
+  right: 0; }
+  @media (max-width: 991.98px) {
+    .card-column {
+      top: 110px !important; } }
+
+.card.floating-card {
+  top: 0;
+  width: 98%;
   left: 0;
   right: 0;
   margin: auto;
   box-shadow: 1px 1px 20px -2px rgba(0, 0, 0, 0.2);
   border: none !important;
-  padding: 20px 40px; }
-  @media (max-width: 991.98px) {
-    .card.floating-card {
-      top: 110px !important; } }
+  padding: 20px 40px;
+  margin-bottom: 30px; }
+  .card.floating-card.no-pad {
+    padding: 0 !important; }
+    .card.floating-card.no-pad .correct-pad {
+      padding: 20px !important; }
   .card.floating-card .image-wrapper {
     border-radius: 50% !important;
     overflow: hidden;
@@ -7871,17 +7919,26 @@ a.nav-link.profile-link {
     @media (max-width: 767.98px) {
       .card.floating-card .profile-info .name, .card.floating-card .profile-info .job {
         text-align: center; }
+      .card.floating-card .profile-info .name {
+        font-size: 17pt !important; }
       .card.floating-card .profile-info .job {
         font-size: 14px !important; }
       .card.floating-card .profile-info .bio {
-        text-align: center;
-        width: 80% !important;
+        width: 90% !important;
         margin: auto auto 20px auto !important;
-        font-size: 13px !important; }
+        font-size: 12px !important; }
       .card.floating-card .profile-info .social-icons {
-        width: 70% !important;
+        width: 90% !important;
         margin: auto !important;
         text-align: center !important; } }
+
+.info-card .title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px; }
+  @media (max-width: 767.98px) {
+    .info-card .title {
+      font-size: 15px !important; } }
 
 @media (max-width: 767.98px) {
   .card-wrapper {
