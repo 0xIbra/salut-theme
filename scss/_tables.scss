@@ -1,0 +1,28 @@
+.table.modernize {
+  color: $brown !important;
+
+  &.table-striped {
+    tbody tr:nth-of-type(odd) {
+      background-color: #e8e1ed !important;
+    }
+  }
+
+  tr {
+
+    @include media-breakpoint-only(md) {
+      font-size: 14px !important;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 11px !important;
+    }
+  }
+
+  tr.clickable.modernize {
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

@@ -129,17 +129,6 @@
         color: $brown !important;
         line-height: 1.2;
 
-        //@include media-breakpoint-down(sm) {
-        //
-        //    .name {
-        //        font-size: 17pt !important;
-        //    }
-        //
-        //    .job {
-        //        font-size: 15px !important;
-        //    }
-        //}
-
         .name {
             font-size: 24pt;
             font-weight: bold;
@@ -175,7 +164,7 @@
         }
 
         @include media-breakpoint-down(sm) {
-            .name, .job {
+            .name, .job, .bio {
                 text-align: center;
             }
 
@@ -188,13 +177,13 @@
             }
 
             .bio {
-                width: 90% !important;
+                width: 100% !important;
                 margin: auto auto 20px auto !important;
                 font-size: 12px !important;
             }
 
             .social-icons {
-                width: 90% !important;
+                width: 100% !important;
                 margin: auto !important;
                 text-align: center !important;
             }
@@ -207,10 +196,37 @@
     .title {
         font-weight: bold;
         font-size: 18px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
 
         @include media-breakpoint-down(sm) {
             font-size: 15px !important;
+
+        }
+    }
+
+
+    .notfound {
+        display: block;
+        font-weight: bold;
+        font-size: 16pt;
+        text-align: center;
+        color: $weakbrown !important;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 11pt !important;
+        }
+    }
+
+}
+
+.item {
+    margin: 0px 10px;
+    margin-left: 0 !important;
+
+    .key, .value {
+        display: inline !important;
+        @include media-breakpoint-down(sm) {
+            font-size: 13px !important;
         }
     }
 }

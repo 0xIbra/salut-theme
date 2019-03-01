@@ -6,4 +6,5 @@ $(document).ready(() => {
     $('.sidebar-overlay').click(() => {
         $('.sidebar-wrapper').removeClass('show')
     })
+
 })

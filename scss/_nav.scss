@@ -101,6 +101,7 @@ ul.nav.nav-tabs.modernize {
 
             @include media-breakpoint-down(sm) {
                 font-size: 16px !important;
+                min-height: 45px;
             }
 
             &:hover {

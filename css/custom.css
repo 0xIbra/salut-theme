@@ -7793,7 +7793,8 @@ ul.nav.nav-tabs.modernize {
     font-size: 18px !important; }
     @media (max-width: 767.98px) {
       ul.nav.nav-tabs.modernize li.nav-item a.nav-link {
-        font-size: 16px !important; } }
+        font-size: 16px !important;
+        min-height: 45px; } }
     ul.nav.nav-tabs.modernize li.nav-item a.nav-link:hover {
       border: none !important;
       border-bottom: 2px solid #9a76e9 !important;
@@ -7917,28 +7918,46 @@ ul.nav.nav-tabs.modernize {
         .card.floating-card .profile-info .social-icons a:hover {
           opacity: .8 !important; }
     @media (max-width: 767.98px) {
-      .card.floating-card .profile-info .name, .card.floating-card .profile-info .job {
+      .card.floating-card .profile-info .name, .card.floating-card .profile-info .job, .card.floating-card .profile-info .bio {
         text-align: center; }
       .card.floating-card .profile-info .name {
         font-size: 17pt !important; }
       .card.floating-card .profile-info .job {
         font-size: 14px !important; }
       .card.floating-card .profile-info .bio {
-        width: 90% !important;
+        width: 100% !important;
         margin: auto auto 20px auto !important;
         font-size: 12px !important; }
       .card.floating-card .profile-info .social-icons {
-        width: 90% !important;
+        width: 100% !important;
         margin: auto !important;
         text-align: center !important; } }
 
 .info-card .title {
   font-weight: bold;
   font-size: 18px;
-  margin-bottom: 5px; }
+  margin-bottom: 10px; }
   @media (max-width: 767.98px) {
     .info-card .title {
       font-size: 15px !important; } }
+.info-card .notfound {
+  display: block;
+  font-weight: bold;
+  font-size: 16pt;
+  text-align: center;
+  color: #998da0 !important; }
+  @media (max-width: 767.98px) {
+    .info-card .notfound {
+      font-size: 11pt !important; } }
+
+.item {
+  margin: 0px 10px;
+  margin-left: 0 !important; }
+  .item .key, .item .value {
+    display: inline !important; }
+    @media (max-width: 767.98px) {
+      .item .key, .item .value {
+        font-size: 13px !important; } }
 
 @media (max-width: 767.98px) {
   .card-wrapper {
@@ -8101,5 +8120,20 @@ ul.nav.nav-tabs.modernize {
           text-decoration: none; }
           .sidebar-wrapper .sidebar ul.sidebar-list li.sidebar-item a.sidebar-link .icon {
             margin-right: 10px; }
+
+.table.modernize {
+  color: #463853 !important; }
+  .table.modernize.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #e8e1ed !important; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .table.modernize tr {
+      font-size: 14px !important; } }
+  @media (max-width: 767.98px) {
+    .table.modernize tr {
+      font-size: 11px !important; } }
+  .table.modernize tr.clickable.modernize {
+    cursor: pointer; }
+    .table.modernize tr.clickable.modernize:hover {
+      opacity: .8; }
 
 /*# sourceMappingURL=custom.css.map */
